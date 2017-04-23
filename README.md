@@ -1,6 +1,9 @@
 # Best Friends
 Iqbal's Personal Website/Hexo Theme
 
+![Desktop](/screenshots/desktop.png)
+![Mobile](/screenshots/mobile.png)
+
 ## Installation & Configuration
 * Simply ``download`` or ``clone`` this repo to folder ``themes``
 * Then, change your **theme** configuration in ``_config.yml`` to ``hexo-theme-best-friends`` (the theme folder name)
