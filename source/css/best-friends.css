@@ -51,17 +51,21 @@ time .fa {
 	padding: 4px;
 }
 
-@media screen and (min-width: 1280px) {
-	#infobar {
-		position: fixed;
-		top: 0px;
-		bottom: 0px;
-		left: 990px;
-		width: 290px;
-	}
+#infobar {
+	position: fixed;
+	top: 0px;
+	bottom: 0px;
+	left: 990px;
+	width: 290px;
+}
 
-	#infobar .socials {
-		margin: 42px 0px 42px 0px;
+#infobar .socials {
+	margin: 42px 0px 42px 0px;
+}
+
+@media screen and (max-width: 1280px) {
+	#infobar {
+		display: none;
 	}
 }
 
