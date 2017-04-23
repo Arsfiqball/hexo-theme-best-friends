@@ -1,0 +1,41 @@
+# Best Friends
+Iqbal's Personal Website/Hexo Theme
+
+## Installation & Configuration
+* Simply ``download`` or ``clone`` this repo to folder ``themes``
+* Then, change your **theme** configuration in ``_config.yml`` to ``hexo-theme-best-friends`` (the theme folder name)
+* In your _config.yml, make **cover_image** config with value the url of your cover image.
+* In your _config.yml, make **profile_image** config with value the url of your profile image.
+* In your _config.yml, make **about_author** config with value short information about you.
+* In your _config.yml, make **socials** config with child format ``key: value`` is ``socialmedia: url``.
+  
+  For example:
+  
+  ```yml
+  
+  about_author: Silent Humble Web Developer
+  cover_image: /images/cover.jpg
+  profile_image: /images/profile.jpg
+
+  socials:
+    facebook: https://facebook.com/arsfiqball
+    twitter: https://twitter.com/arsfiqball
+    instagram: https://instagram.com/arsfiqball
+    linkedin: https://www.linkedin.com/in/arsfiqball/
+    github: https://github.com/arsfiqball
+    email: "mailto:iqballmags@gmail.com"
+  
+  ```
+
+## Issues?
+Find bug? or want enhancement?
+
+Pull your request here...
+
+[Issues](https://github.com/Arsfiqball/hexo-theme-best-friends/issues)
+
+## License
+[MIT](/LICENSE)
+
+## Maintainer
+[Arsfiqball](http://www.arsfiqball.com)
