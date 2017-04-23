@@ -1,0 +1,149 @@
+body {
+	background: #eee;
+}
+
+time .fa {
+	position: relative;
+	bottom: -3px;
+	margin-left: 4px;
+	margin-right: 4px;
+}
+
+.tag .fa {
+	margin-right: 4px;
+}
+
+/* Mobile */
+#cover {
+	display: none;
+}
+
+#sidebar {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	bottom: 0px;
+	width: 320px;
+	background: #fcfcfc;
+	box-shadow: 0px 0px 4px #ccc;
+}
+
+#sidebar:hover {
+	overflow-y: auto;
+}
+
+#sidebar .author-info {
+	margin: 20px;
+	text-align: center;
+}
+
+#sidebar .menu-list {
+	margin: 20px 20px 20px 20px;
+}
+
+#sidebar > .image + .profile-pic {
+	position: relative;
+	background: inherit;
+	bottom: 64px;
+	margin: auto;
+	margin-bottom: -64px;
+	border-radius: 4px;
+	padding: 4px;
+}
+
+@media screen and (min-width: 1280px) {
+	#infobar {
+		position: fixed;
+		top: 0px;
+		bottom: 0px;
+		left: 990px;
+		width: 290px;
+	}
+
+	#infobar .socials {
+		margin: 42px 0px 42px 0px;
+	}
+}
+
+.bg-facebook {
+	background-color: #4867AA;
+	border-color: #4867AA;
+	color: #fff;
+}
+
+.bg-twitter {
+	background-color: #1DA1F2;
+	border-color: #1DA1F2;
+	color: #fff;
+}
+
+.bg-instagram {
+	background-color: #DD3471;
+	border-color: #DD3471;
+	color: #fff;
+}
+
+.bg-linkedin {
+	background-color: #0077B5;
+	border-color: #0077B5;
+	color: #fff;
+}
+
+.bg-github {
+	background-color: #323131;
+	border-color: #323131;
+	color: #fff;
+}
+
+.bg-email {
+	background-color: #DA3B32;
+	border-color: #DA3B32;
+	color: #fff;
+}
+
+#content {
+	line-height: 1.7;
+	width: 100%;
+	min-height: 100%;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 320px;
+}
+
+#recent-posts, .single-post, .post-pagination {
+	width: 670px;
+	padding: 42px 42px 42px 42px;
+}
+
+#recent-posts .post, .single-post .post {
+	margin-bottom: 42px;
+}
+
+#return-to-top {
+    position: fixed;
+    bottom: 20px;
+    left: 990px; // desktop
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.7);
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+#return-to-top i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 16px;
+    top: 13px;
+    font-size: 19px;
+}
+
+#return-to-top:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
+
+#return-to-top:hover i {
+    color: #fff;
+}

@@ -1,0 +1,44 @@
+@media screen and (max-width: 1020px) {
+	#sidebar {
+		display: none;
+	}
+
+	#cover {
+		display: block;
+		position: static;
+		margin: 0px 0px 0px 0px;
+	}
+
+	#cover > .image + .profile-pic {
+		position: relative;
+		background: #fefefe;
+		bottom: 64px;
+		margin: auto;
+		margin-bottom: -64px;
+		border-radius: 4px;
+		padding: 4px;
+	}
+
+	#cover .author-info {
+		margin: 20px;
+		text-align: center;
+	}
+
+	#content {
+		padding: 0px 0px 0px 0px;
+	}
+
+	#content > * {
+		margin: auto;
+	}
+
+	#recent-posts, .single-post, .post-pagination {
+		width: 100%;
+		max-width: 670px;
+		padding: 20px 6px 20px 6px;
+	}
+
+	#return-to-top {
+		left: 20px;
+	}
+}
