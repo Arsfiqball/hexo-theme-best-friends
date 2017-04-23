@@ -11,6 +11,7 @@ Iqbal's Personal Website/Hexo Theme
 * In your _config.yml, make **profile_image** config with value the url of your profile image.
 * In your _config.yml, make **about_author** config with value short information about you.
 * In your _config.yml, make **socials** config with child format ``key: value`` is ``socialmedia: url``.
+* In your _config.yml, make **disqus_comment_box** config with value your ``disqus id``.
   
   For example:
   
@@ -27,6 +28,7 @@ Iqbal's Personal Website/Hexo Theme
     linkedin: https://www.linkedin.com/in/arsfiqball/
     github: https://github.com/arsfiqball
     email: "mailto:iqballmags@gmail.com"
+  disqus_comment_box : arsfiqball-github-blog
   
   ```
 

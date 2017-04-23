@@ -41,13 +41,14 @@
       </div>
     </div>
   </div>
-  <div style="display: none;" id="comment_url">{{ page.path }}</div>
-  <div style="display: none;" id="comment_identifier">{{ page.path }}</div>
+  <input type="hidden" style="display: none;" id="comment_url" value="{{ page.path }}">
+  <input type="hidden" style="display: none;" id="comment_identifier" value="{{ page.path }}">
+  <input type="hidden" style="display: none;" id="comment_src" value="https://{{ config.disqus_comment_box }}.disqus.com/embed.js">
   <div id="disqus_thread">Wait a moment, loading comments...</div>
   <script>
     (function() { // DON'T EDIT BELOW THIS LINE
     var d = document, s = d.createElement('script');
-    s.src = 'https://arsfiqball-github-blog.disqus.com/embed.js';
+    s.src = document.getElementById('comment_src').value;
     s.setAttribute('data-timestamp', +new Date());
     (d.head || d.body).appendChild(s);
     })();
