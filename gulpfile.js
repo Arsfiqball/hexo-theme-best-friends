@@ -2,10 +2,12 @@ const gulp = require('gulp');
 const sass = require('gulp-sass');
 const uglify = require('gulp-uglify');
 const concat = require('gulp-concat');
+const cleanCSS = require('gulp-clean-css');
 
 gulp.task('styles', function () {
   return gulp.src('./resources/styles/app.scss')
     .pipe(sass().on('error', sass.logError))
+    .pipe(cleanCSS())
     .pipe(gulp.dest('./source/build'));
 });
 
