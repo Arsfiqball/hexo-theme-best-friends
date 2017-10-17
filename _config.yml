@@ -13,10 +13,8 @@ favicon: /favicon.ico
 
 # stylesheets loaded in the <head>
 stylesheets:
-- /css/best-friends.css
-- /css/highlight.css
-- /css/mobile.css
+- /build/app.css
 
 # scripts loaded in the end of the body
 scripts:
-- /js/best-friends.js
+- /build/app.js

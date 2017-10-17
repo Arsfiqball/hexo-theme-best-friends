@@ -32,7 +32,6 @@
 
   <title>{{ pageTitle }}</title>
 
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.0/css/bulma.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
   {% if theme.stylesheets !== undefined && theme.stylesheets.length > 0 %}
