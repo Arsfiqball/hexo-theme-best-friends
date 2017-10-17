@@ -5,7 +5,10 @@ Iqbal's Personal Website/Hexo Theme
 ![Mobile](/screenshots/mobile.png)
 
 ## Installation & Configuration
+* Make sure you already installed [gulp](https://gulpjs.com/)
 * Simply ``download`` or ``clone`` this repo to folder ``themes``
+* Run ``npm install`` to install dependencies
+* Run ``gulp`` to build scripts and styles
 * Then, change your **theme** configuration in ``_config.yml`` to ``hexo-theme-best-friends`` (the theme folder name)
 * In your _config.yml, make **cover_image** config with value the url of your cover image.
 * In your _config.yml, make **profile_image** config with value the url of your profile image.
