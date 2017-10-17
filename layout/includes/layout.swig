@@ -33,6 +33,7 @@
   <title>{{ pageTitle }}</title>
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
 
   {% if theme.stylesheets !== undefined && theme.stylesheets.length > 0 %}
 
@@ -202,6 +203,8 @@
   <a href="javascript:" id="return-to-top"><i class="fa fa-chevron-up"></i></a>
 
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="//cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.1.0/highlightjs-line-numbers.min.js"></script>
   {% if theme.scripts !== undefined && theme.scripts.length > 0 %}
 
     {% for url in theme.scripts %}
