@@ -18,8 +18,10 @@
             </h4>
             {% if postItem.date %}
               <p>
-                <time datetime="{{ postItem.date.toJSON() }}">
+                <span class="icon">
                   <i class="fa fa-calendar"></i>
+                </span>
+                <time datetime="{{ postItem.date.toJSON() }}">
                   {{ date(postItem.date) }}
                 </time>
               </p>
@@ -44,5 +46,6 @@
       </div>
     {% endfor %}
   </div>
+  {% include 'includes/pagination.swig' %}
 
 {% endblock %}

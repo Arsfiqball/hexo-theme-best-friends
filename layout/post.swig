@@ -20,12 +20,14 @@
     <div class="card-content">
       <div class="content">
         <h4>
-          <a href="{{ config.root }}{{ page.path }}">{{ page.title }}</a>
+          {{ page.title }}
         </h4>
         {% if page.date %}
           <p>
-            <time datetime="{{ page.date.toJSON() }}">
+            <span class="icon">
               <i class="fa fa-calendar"></i>
+            </span>
+            <time datetime="{{ page.date.toJSON() }}">
               {{ date(page.date) }}
             </time>
           </p>

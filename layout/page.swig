@@ -20,30 +20,8 @@
     <div class="card-content">
       <div class="content">
         <h4>
-          <a href="{{ config.root }}{{ page.path }}">{{ page.title }}</a>
+          {{ page.title }}
         </h4>
-        {% if page.date %}
-          <p>
-            <time datetime="{{ page.date.toJSON() }}">
-              <i class="fa fa-calendar"></i>
-              {{ date(page.date) }}
-            </time>
-          </p>
-          <p>
-            {% for category in page.categories %}
-              <a class="tag is-success" href="/{{ category.path }}">
-                <i class="fa fa-tags"></i>
-                {{ category.name }}
-              </a>
-            {% endfor %}
-            {% for tag in page.tags %}
-              <a class="tag is-info" href="/{{ tag.path }}">
-                <i class="fa fa-tag"></i>
-                {{ tag.name }}
-              </a>
-            {% endfor %}
-          </p>
-        {% endif %}
         {{  page.content }}
         <hr>
         <a class="button is-small share-button facebook" href="https://www.facebook.com/sharer/sharer.php?u={{ (config.url + config.root + page.path) | url_encode }}">
