@@ -43,6 +43,11 @@
 
   {% endif %}
 
+  <meta property="og:site_name" content="{{ config.title }}"/>
+  <meta property="og:title" content="{{ page.title }}"/>
+
+  {% block opengraph %}{% endblock %}
+
 </head>
 <body>
 
