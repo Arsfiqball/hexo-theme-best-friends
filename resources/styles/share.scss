@@ -1,0 +1,18 @@
+.share-button {
+  color: #fff;
+
+  &.google-plus {
+    background-color: #dc4a38;
+    border-color: #dc4a38;
+  }
+
+  &.facebook {
+    background-color: #4267b2;
+    border-color: #4267b2;
+  }
+
+  &.twitter {
+    background-color: #1da1f2;
+    border-color: #1da1f2;
+  }
+}

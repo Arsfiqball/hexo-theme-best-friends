@@ -38,6 +38,25 @@
           </p>
         {% endif %}
         {{  page.content }}
+        <hr>
+        <a class="button is-small share-button facebook" href="https://www.facebook.com/sharer/sharer.php?u={{ encodeURI(config.url + config.root + page.path) }}">
+          <span class="icon">
+            <i class="fa fa-facebook"></i>
+          </span>
+          <span>Share</span>
+        </a>
+        <a class="button is-small share-button twitter" href="https://twitter.com/home?status={{ encodeURI(config.url + config.root + page.path) }}">
+          <span class="icon">
+            <i class="fa fa-twitter"></i>
+          </span>
+          <span>Share</span>
+        </a>
+        <a class="button is-small share-button google-plus" href="https://plus.google.com/share?url={{ encodeURI(config.url + config.root + page.path) }}">
+          <span class="icon">
+            <i class="fa fa-google-plus"></i>
+          </span>
+          <span>Share</span>
+        </a>
       </div>
     </div>
   </div>
