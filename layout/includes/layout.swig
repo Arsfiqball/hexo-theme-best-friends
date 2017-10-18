@@ -152,7 +152,7 @@
     </div>
   {% endif %}
 
-  <div id="content">
+  <div id="content" style="padding-bottom: 4rem; min-height: 100vh;">
     {% block body %}{% endblock %}
   </div>
 
