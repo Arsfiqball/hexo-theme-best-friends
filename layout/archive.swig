@@ -58,9 +58,10 @@
               </aside>
             </div>
           {% else %}
-            <h3>{{ page.month + '/' + page.year }}</h3>
+            <p>{{ page.month + ' / ' + page.year }}</p>
             {% for postItem in page.posts.toArray() %}
               <div class="archive-item">
+                <hr>
                 {% if postItem.link %}
                   <!-- external link -->
                   <a href="{{ url_for(postItem.link) }}" target="_blank">
@@ -75,6 +76,7 @@
                   </a>
                 {% endif %}
 
+                <br>
                 <time datetime="{{ date_xml(postItem.date) }}">
                   {{ date(postItem.date) }}
                 </time>
