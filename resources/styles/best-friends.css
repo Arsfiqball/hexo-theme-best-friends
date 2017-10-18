@@ -113,9 +113,19 @@ time .fa {
 	padding: 0px 0px 0px 320px;
 }
 
-#recent-posts, .single-post, .post-pagination {
+#recent-posts, .single-post {
 	width: 670px;
-	padding: 42px 42px 42px 42px;
+	padding: 42px 42px 0px 42px;
+}
+
+.post-pagination {
+    width: 670px;
+    padding: 0px 42px 42px 42px;
+}
+.post-pagination .pagination {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 1rem;
 }
 
 #recent-posts .post, .single-post .post {
