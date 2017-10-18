@@ -15,6 +15,7 @@ Iqbal's Personal Website/Hexo Theme
 * In your ``_config.yml``, make ``about_author`` config with value short information about you.
 * In your ``_config.yml``, make ``socials`` config with child format ``key: value`` is ``socialmedia: url``.
 * In your ``_config.yml``, make ``disqus_comment_box`` config with value your ``disqus id``.
+* In your ``_config.yml``, disable ``highlight``.
   
 For example:
 ```yml
@@ -30,6 +31,9 @@ socials:
   github: https://github.com/arsfiqball
   email: "mailto:iqballmags@gmail.com"
 disqus_comment_box : arsfiqball-github-blog
+
+highlight:
+  enable: false
 ```
 
 ## Issues?
