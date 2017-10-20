@@ -210,6 +210,7 @@
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="//cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.1.0/highlightjs-line-numbers.min.js"></script>
+  <script src="//twemoji.maxcdn.com/2/twemoji.min.js?2.3.0"></script>
   {% if theme.scripts !== undefined && theme.scripts.length > 0 %}
 
     {% for url in theme.scripts %}

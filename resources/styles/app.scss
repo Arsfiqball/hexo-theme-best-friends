@@ -7,6 +7,10 @@ $card-shadow: none;
 .card {
   border: 1px solid #ebebeb;
 }
+.emoji {
+  height: 16pt;
+  margin-bottom: -4pt;
+}
 
 @import '../../node_modules/bulma/bulma';
 @import './best-friends';
