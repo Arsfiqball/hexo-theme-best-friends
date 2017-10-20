@@ -1,5 +1,5 @@
 body {
-	background: #eee;
+	background: #fafafa;
 }
 
 time .fa {
@@ -23,9 +23,10 @@ time .fa {
 	top: 0px;
 	left: 0px;
 	bottom: 0px;
-	width: 320px;
+	width: 340px;
 	background: #fcfcfc;
-	box-shadow: 0px 0px 4px #ccc;
+    border: 1px solid #ebebeb;
+	box-shadow: 0px 0px 0px #ccc;
 }
 
 #sidebar:hover {
@@ -33,12 +34,13 @@ time .fa {
 }
 
 #sidebar .author-info {
-	margin: 20px;
+	margin: 30px;
 	text-align: center;
 }
 
-#sidebar .menu-list {
+#sidebar .socials {
 	margin: 20px 20px 20px 20px;
+    text-align: center;
 }
 
 #sidebar > .image + .profile-pic {
@@ -55,11 +57,11 @@ time .fa {
 	position: fixed;
 	top: 0px;
 	bottom: 0px;
-	left: 990px;
-	width: 290px;
+	left: 1060px;
+	width: 180px;
 }
 
-#infobar .socials {
+#infobar .menu-list {
 	margin: 42px 0px 42px 0px;
 }
 
@@ -69,57 +71,31 @@ time .fa {
 	}
 }
 
-.bg-facebook {
-	background-color: #4867AA;
-	border-color: #4867AA;
-	color: #fff;
-}
-
-.bg-twitter {
-	background-color: #1DA1F2;
-	border-color: #1DA1F2;
-	color: #fff;
-}
-
-.bg-instagram {
-	background-color: #DD3471;
-	border-color: #DD3471;
-	color: #fff;
-}
-
-.bg-linkedin {
-	background-color: #0077B5;
-	border-color: #0077B5;
-	color: #fff;
-}
-
-.bg-github {
-	background-color: #323131;
-	border-color: #323131;
-	color: #fff;
-}
-
-.bg-email {
-	background-color: #DA3B32;
-	border-color: #DA3B32;
-	color: #fff;
-}
-
 #content {
 	line-height: 1.7;
 	width: 100%;
-	min-height: 100%;
 	margin: 0px 0px 0px 0px;
-	padding: 0px 0px 0px 320px;
+	padding: 0px 0px 0px 350px;
+    padding-bottom: 4rem;
+    min-height: 100vh;
+}
+
+@media screen and (min-width: 1280px) {
+    #content {
+        line-height: 1.94;
+    }
+    #content .card .card-content {
+        margin: 20px;
+    }
 }
 
 #recent-posts, .single-post {
-	width: 670px;
+	width: 720px;
 	padding: 42px 42px 0px 42px;
 }
 
 .post-pagination {
-    width: 670px;
+    width: 740px;
     padding: 0px 42px 42px 42px;
 }
 .post-pagination .pagination {
@@ -135,7 +111,7 @@ time .fa {
 #return-to-top {
     position: fixed;
     bottom: 20px;
-    left: 990px; // desktop
+    left: 1070px; // desktop
     background: rgb(0, 0, 0);
     background: rgba(0, 0, 0, 0.7);
     width: 50px;

@@ -3,6 +3,10 @@
 @import '../../node_modules/bulma/sass/utilities/initial-variables';
 
 $family-primary: 'Lato', sans-serif;
+$card-shadow: none;
+.card {
+  border: 1px solid #ebebeb;
+}
 
 @import '../../node_modules/bulma/bulma';
 @import './best-friends';
