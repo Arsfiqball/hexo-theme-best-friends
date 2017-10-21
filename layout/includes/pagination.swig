@@ -15,15 +15,15 @@
     <ul class="pagination-list">
       <li>
         {% if page.prev %}
-          <a class="pagination-link" href="{{ page.prev_link }}">{{ page.prev }}</a>
+          <a class="pagination-link" href="{{ url_for(page.prev_link) }}">{{ page.prev }}</a>
         {% endif %}
       </li>
       <li>
-        <a class="pagination-link is-current" href="{{ page.current_url }}">{{ page.current }}</a>
+        <a class="pagination-link is-current" href="{{ url_for(page.current_url) }}">{{ page.current }}</a>
       </li>
       <li>
         {% if page.next %}
-          <a class="pagination-link" href="{{ page.next_link }}">{{ page.next }}</a>
+          <a class="pagination-link" href="{{ url_for(page.next_link) }}">{{ page.next }}</a>
         {% endif %}
       </li>
     </ul>
