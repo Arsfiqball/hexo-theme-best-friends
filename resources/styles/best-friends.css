@@ -25,7 +25,7 @@ time .fa {
 	bottom: 0px;
 	width: 340px;
 	background: #fcfcfc;
-    border: 1px solid #ebebeb;
+    border-right: 1px solid #ebebeb;
 	box-shadow: 0px 0px 0px #ccc;
 }
 
