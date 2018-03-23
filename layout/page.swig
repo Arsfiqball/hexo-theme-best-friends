@@ -18,31 +18,31 @@
       </div>
     {% endif %}
     <div class="card-content">
+      <p class="is-size-5-mobile is-size-4" style="margin-bottom: 8px">
+        {{ page.title }}
+      </p>
       <div class="content">
-        <h4>
-          {{ page.title }}
-        </h4>
         {{  page.content }}
-        <hr>
-        <a class="button is-small share-button facebook" href="https://www.facebook.com/sharer/sharer.php?u={{ (config.url + config.root + page.path) | url_encode }}">
-          <span class="icon">
-            <i class="fa fa-facebook"></i>
-          </span>
-          <span>Share</span>
-        </a>
-        <a class="button is-small share-button twitter" href="https://twitter.com/home?status={{ (config.url + config.root + page.path) | url_encode }}">
-          <span class="icon">
-            <i class="fa fa-twitter"></i>
-          </span>
-          <span>Share</span>
-        </a>
-        <a class="button is-small share-button google-plus" href="https://plus.google.com/share?url={{ (config.url + config.root + page.path) | url_encode }}">
-          <span class="icon">
-            <i class="fa fa-google-plus"></i>
-          </span>
-          <span>Share</span>
-        </a>
       </div>
+      <hr>
+      <a class="button is-small share-button facebook" href="https://www.facebook.com/sharer/sharer.php?u={{ (config.url + config.root + page.path) | url_encode }}">
+        <span class="icon">
+          <i class="fa fa-facebook"></i>
+        </span>
+        <span>Share</span>
+      </a>
+      <a class="button is-small share-button twitter" href="https://twitter.com/home?status={{ (config.url + config.root + page.path) | url_encode }}">
+        <span class="icon">
+          <i class="fa fa-twitter"></i>
+        </span>
+        <span>Share</span>
+      </a>
+      <a class="button is-small share-button google-plus" href="https://plus.google.com/share?url={{ (config.url + config.root + page.path) | url_encode }}">
+        <span class="icon">
+          <i class="fa fa-google-plus"></i>
+        </span>
+        <span>Share</span>
+      </a>
     </div>
   </div>
 </div>

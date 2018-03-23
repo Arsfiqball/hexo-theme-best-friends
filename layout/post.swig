@@ -18,55 +18,56 @@
       </div>
     {% endif %}
     <div class="card-content">
+      <p class="is-size-5-mobile is-size-4" style="margin-bottom: 8px">
+        {{ page.title }}
+      </p>
+      {% if page.date %}
+        <p style="margin-bottom: 12px">
+          <span class="icon">
+            <i class="fa fa-calendar"></i>
+          </span>
+          <time datetime="{{ page.date.toJSON() }}">
+            {{ date(page.date) }}
+          </time>
+        </p>
+        <p class="tags" style="margin-bottom: 12px">
+          {% for category in page.categories %}
+            <a class="tag is-success" href="/{{ category.path }}">
+              <i class="fa fa-tags"></i>
+              {{ category.name }}
+            </a>
+          {% endfor %}
+          {% for tag in page.tags %}
+            <a class="tag is-info" href="/{{ tag.path }}">
+              <i class="fa fa-tag"></i>
+              {{ tag.name }}
+            </a>
+          {% endfor %}
+        </p>
+      {% endif %}
       <div class="content">
-        <h4>
-          {{ page.title }}
-        </h4>
-        {% if page.date %}
-          <p>
-            <span class="icon">
-              <i class="fa fa-calendar"></i>
-            </span>
-            <time datetime="{{ page.date.toJSON() }}">
-              {{ date(page.date) }}
-            </time>
-          </p>
-          <p>
-            {% for category in page.categories %}
-              <a class="tag is-success" href="/{{ category.path }}">
-                <i class="fa fa-tags"></i>
-                {{ category.name }}
-              </a>
-            {% endfor %}
-            {% for tag in page.tags %}
-              <a class="tag is-info" href="/{{ tag.path }}">
-                <i class="fa fa-tag"></i>
-                {{ tag.name }}
-              </a>
-            {% endfor %}
-          </p>
-        {% endif %}
         {{  page.content }}
-        <hr>
-        <a class="button is-small share-button facebook" href="https://www.facebook.com/sharer/sharer.php?u={{ (config.url + config.root + page.path) | url_encode }}">
-          <span class="icon">
-            <i class="fa fa-facebook"></i>
-          </span>
-          <span>Share</span>
-        </a>
-        <a class="button is-small share-button twitter" href="https://twitter.com/home?status={{ (config.url + config.root + page.path) | url_encode }}">
-          <span class="icon">
-            <i class="fa fa-twitter"></i>
-          </span>
-          <span>Share</span>
-        </a>
-        <a class="button is-small share-button google-plus" href="https://plus.google.com/share?url={{ (config.url + config.root + page.path) | url_encode }}">
-          <span class="icon">
-            <i class="fa fa-google-plus"></i>
-          </span>
-          <span>Share</span>
-        </a>
       </div>
+      <hr>
+      <a class="button is-small share-button facebook" href="https://www.facebook.com/sharer/sharer.php?u={{ (config.url + config.root + page.path) | url_encode }}">
+        <span class="icon">
+          <i class="fa fa-facebook"></i>
+        </span>
+        <span>Share</span>
+      </a>
+      <a class="button is-small share-button twitter" href="https://twitter.com/home?status={{ (config.url + config.root + page.path) | url_encode }}">
+        <span class="icon">
+          <i class="fa fa-twitter"></i>
+        </span>
+        <span>Share</span>
+      </a>
+      <a class="button is-small share-button google-plus" href="https://plus.google.com/share?url={{ (config.url + config.root + page.path) | url_encode }}">
+        <span class="icon">
+          <i class="fa fa-google-plus"></i>
+        </span>
+        <span>Share</span>
+      </a>
+      <hr>
       {% if config.disqus_comment_box %}
         <input type="hidden" style="display: none;" id="comment_url" value="{{ page.path }}">
         <input type="hidden" style="display: none;" id="comment_identifier" value="{{ page.path }}">

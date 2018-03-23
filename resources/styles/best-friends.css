@@ -71,8 +71,11 @@ time .fa {
 	}
 }
 
-#content {
+#content .content {
 	line-height: 1.7;
+}
+
+#content {
 	width: 100%;
 	margin: 0px 0px 0px 0px;
 	padding: 0px 0px 0px 350px;
@@ -81,12 +84,16 @@ time .fa {
 }
 
 @media screen and (min-width: 1280px) {
-    #content {
+    #content .content {
         line-height: 1.94;
     }
     #content .card .card-content {
         margin: 20px;
     }
+}
+
+#content .content p {
+    text-align: justify;
 }
 
 #recent-posts, .single-post {
