@@ -24,6 +24,15 @@
 		text-align: center;
 	}
 
+	.mobile-menu {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.mobile-menu .button {
+		margin: 2px 2px;
+	}
+
 	#content {
 		padding: 0px 0px 0px 0px;
 	}

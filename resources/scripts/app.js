@@ -4,6 +4,10 @@ $('#return-to-top').click(function() {      // When arrow is clicked
   }, 1000);
 });
 
+$('.dropdown').click(function(e) {
+  $(this).toggleClass('is-active');
+});
+
 hljs.initHighlightingOnLoad();
 
 $(document).ready(function(){

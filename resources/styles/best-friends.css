@@ -17,6 +17,9 @@ time .fa {
 #cover {
 	display: none;
 }
+.mobile-menu {
+    display: none;
+}
 
 #sidebar {
 	position: fixed;

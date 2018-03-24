@@ -75,42 +75,42 @@
     {% if config.socials %}
     <div class="socials">
       {% if config.socials.facebook %}
-        <a href="{{ config.socials.facebook }}" class="button is-white">
+        <a href="{{ config.socials.facebook }}" class="button">
           <span class="icon">
             <i class="fa fa-facebook"></i>
           </span>
         </a>
       {% endif %}
       {% if config.socials.twitter %}
-        <a href="{{ config.socials.twitter }}" class="button is-white">
+        <a href="{{ config.socials.twitter }}" class="button">
           <span class="icon">
             <i class="fa fa-twitter"></i>
           </span>
         </a>
       {% endif %}
       {% if config.socials.instagram %}
-        <a href="{{ config.socials.instagram }}" class="button is-white">
+        <a href="{{ config.socials.instagram }}" class="button">
           <span class="icon">
             <i class="fa fa-instagram"></i>
           </span>
         </a>
       {% endif %}
       {% if config.socials.linkedin %}
-        <a href="{{ config.socials.linkedin }}" class="button is-white">
+        <a href="{{ config.socials.linkedin }}" class="button">
           <span class="icon">
             <i class="fa fa-linkedin"></i>
           </span>
         </a>
       {% endif %}
       {% if config.socials.github %}
-        <a href="{{ config.socials.github }}" class="button is-white">
+        <a href="{{ config.socials.github }}" class="button">
           <span class="icon">
             <i class="fa fa-github"></i>
           </span>
         </a>
       {% endif %}
       {% if config.socials.email %}
-        <a href="{{ config.socials.email }}" class="button is-white">
+        <a href="{{ config.socials.email }}" class="button">
           <span class="icon">
             <i class="fa fa-envelope"></i>
           </span>
@@ -131,65 +131,85 @@
         </figure>
       {% endif %}
       <div class="author-info content">
-        <h2>{{ config.author }}</h2>
+        <h4>{{ config.author }}</h4>
         {% if config.about_author %}
-          <p>{{ config.about_author }}</p>
+          <p class="is-size-7">{{ config.about_author }}</p>
         {% endif %}
-        <p>
+{#         <p>
           {% for key in Object.keys(theme.menu) %}
             <a href="{{ theme.menu[key] }}" class="button is-white">{{ key }}</a>
           {% endfor %}
         </p>
-
-        {% if config.socials %}
-          <p>
-            {% if config.socials.facebook %}
-              <a href="{{ config.socials.facebook }}" class="button is-white">
-                <span class="icon">
-                  <i class="fa fa-facebook"></i>
-                </span>
-              </a>
-            {% endif %}
-            {% if config.socials.twitter %}
-              <a href="{{ config.socials.twitter }}" class="button is-white">
-                <span class="icon">
-                  <i class="fa fa-twitter"></i>
-                </span>
-              </a>
-            {% endif %}
-            {% if config.socials.instagram %}
-              <a href="{{ config.socials.instagram }}" class="button is-white">
-                <span class="icon">
-                  <i class="fa fa-instagram"></i>
-                </span>
-              </a>
-            {% endif %}
-            {% if config.socials.linkedin %}
-              <a href="{{ config.socials.linkedin }}" class="button is-white">
-                <span class="icon">
-                  <i class="fa fa-linkedin"></i>
-                </span>
-              </a>
-            {% endif %}
-            {% if config.socials.github %}
-              <a href="{{ config.socials.github }}" class="button is-white">
-                <span class="icon">
-                  <i class="fa fa-github"></i>
-                </span>
-              </a>
-            {% endif %}
-            {% if config.socials.email %}
-              <a href="{{ config.socials.email }}" class="button is-white">
-                <span class="icon">
-                  <i class="fa fa-envelope"></i>
-                </span>
-              </a>
-            {% endif %}
-          </p>
-        {% endif %}
+ #}
       </div>
     </div>
   {% endif %}
+
+  <div class="mobile-menu is-size-7">
+    <div class="dropdown">
+      <div class="dropdown-trigger">
+        <button class="button is-small" aria-haspopup="true" aria-controls="dropdown-menu">
+          <span>Menu</span>
+          <span class="icon is-small">
+            <i class="fa fa-angle-down" aria-hidden="true"></i>
+          </span>
+        </button>
+      </div>
+      <div class="dropdown-menu" id="dropdown-menu" role="menu">
+        <div class="dropdown-content">
+          {% for key in Object.keys(theme.menu) %}
+            <a href="{{ theme.menu[key] }}" class="dropdown-item">
+              {{ key }}
+            </a>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+    {% if config.socials %}
+      {% if config.socials.facebook %}
+        <a href="{{ config.socials.facebook }}" class="button is-small">
+          <span class="icon">
+            <i class="fa fa-facebook"></i>
+          </span>
+        </a>
+      {% endif %}
+      {% if config.socials.twitter %}
+        <a href="{{ config.socials.twitter }}" class="button is-small">
+          <span class="icon">
+            <i class="fa fa-twitter"></i>
+          </span>
+        </a>
+      {% endif %}
+      {% if config.socials.instagram %}
+        <a href="{{ config.socials.instagram }}" class="button is-small">
+          <span class="icon">
+            <i class="fa fa-instagram"></i>
+          </span>
+        </a>
+      {% endif %}
+      {% if config.socials.linkedin %}
+        <a href="{{ config.socials.linkedin }}" class="button is-small">
+          <span class="icon">
+            <i class="fa fa-linkedin"></i>
+          </span>
+        </a>
+      {% endif %}
+      {% if config.socials.github %}
+        <a href="{{ config.socials.github }}" class="button is-small">
+          <span class="icon">
+            <i class="fa fa-github"></i>
+          </span>
+        </a>
+      {% endif %}
+      {% if config.socials.email %}
+        <a href="{{ config.socials.email }}" class="button is-small">
+          <span class="icon">
+            <i class="fa fa-envelope"></i>
+          </span>
+        </a>
+      {% endif %}
+    {% endif %}
+  </div>
 
   <div id="content">
     {% block body %}{% endblock %}

@@ -11,6 +11,10 @@ $card-shadow: none;
   height: 16pt;
   margin-bottom: -4pt;
 }
+.is-size-7 .emoji {
+  height: 12pt;
+  margin-bottom: -2.4pt;
+}
 
 @import '../../node_modules/bulma/bulma';
 @import './best-friends';
