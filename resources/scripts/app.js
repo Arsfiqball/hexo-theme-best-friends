@@ -8,11 +8,14 @@ $('.dropdown').click(function(e) {
   $(this).toggleClass('is-active');
 });
 
-hljs.initHighlightingOnLoad();
-
 $(document).ready(function(){
+  $('pre code').each(function(i, block) {
+    block.innerHTML = block.innerHTML.trim();
+    hljs.highlightBlock(block);
+  });
+
   $('code.hljs').each(function(i, block) {
-    hljs.lineNumbersBlock(block);
+    hljs.lineNumbersBlock(block, { singleLine: true });
   });
 
   $('.share-button').click(function(e) {
